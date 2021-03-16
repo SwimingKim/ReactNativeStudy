@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -19,6 +19,11 @@ import {
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
+
+  useEffect(() => {
+    console.log("START")
+  })
+  
   return (
     <>
       <StatusBar barStyle="light-content" />
